@@ -1,0 +1,40 @@
+:root{color-scheme:light;--text:#494e52;--muted:#6c7378;--line:#e5e7e9;--link:#1765b3;--link-hover:#0b4380}
+*{box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--text);font-family:-apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue",Arial,sans-serif;line-height:1.65}
+a{color:var(--link);text-decoration:none;transition:color .15s ease}
+a:hover,a:focus{text-decoration:underline;text-underline-offset:.18em;color:var(--link-hover)}
+.layout{display:grid;grid-template-columns:195px minmax(0,1fr);gap:2rem;width:min(1280px,calc(100% - 48px));margin:0 auto;padding:2rem 0 5rem}
+.sidebar{position:sticky;top:2rem;align-self:start;min-width:0}
+.author__avatar{width:100%;max-width:175px;margin-bottom:1rem}
+.author__avatar img{display:block;width:100%;height:auto;padding:0;border:0;border-radius:0;object-fit:contain}
+.author__content{padding:0 5px}
+.author__name{margin:0 0 .75rem;font-size:1rem;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
+.author__urls{margin:0;padding:0 5px;list-style:none}
+.author__urls li{margin:.3rem 0;font-size:.82rem}
+.page,.page__inner-wrap,.page__content{min-width:0}
+.page__content{max-width:900px}
+.page__content p,.page__content li{font-size:1rem}
+.page__content p{margin:0 0 1.3rem}
+.page__content h2{margin:2rem 0 .9rem;padding-bottom:.45rem;border-bottom:1px solid var(--line);font-size:1.35rem;font-weight:600;line-height:1.3}
+.publication-entry{display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr);gap:1.35rem;align-items:start;margin:1.45rem 0 1.8rem;padding-bottom:1.35rem;border-bottom:1px solid #f0f1f2}
+.publication-entry--text-only{grid-template-columns:minmax(0,1fr)}
+.publication-entry__image{display:block;min-width:0;align-self:center}
+.publication-entry__image img{display:block;width:100%;height:auto;object-fit:contain}
+.publication-entry__body{min-width:0;overflow-wrap:anywhere}
+.publication-entry__title{margin-bottom:.35rem;font-size:1rem;font-weight:600;line-height:1.45}
+.publication-entry__subtitle{margin-bottom:.3rem;color:#555;font-size:.92rem}
+.publication-entry__venue{margin-bottom:.35rem;color:#555;font-size:.85rem;font-weight:600}
+.publication-entry__links{margin-bottom:.35rem;font-size:.85rem}
+.publication-entry__summary{margin:0!important;font-size:.9rem!important;line-height:1.55}
+.experience-entry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 1.2rem;align-items:start;margin:1.3rem 0 1.7rem}
+.experience-entry__body{display:contents;min-width:0;overflow-wrap:anywhere}
+.experience-entry__institution{font-weight:600}
+.experience-entry__dates{grid-column:2;grid-row:1;color:var(--muted);font-size:.85rem;white-space:nowrap}
+.experience-entry__role,.experience-entry__details{grid-column:1/-1}
+.experience-entry__role{font-weight:600}
+.experience-entry__details p{margin:.25rem 0 0}
+.page__content ul{margin:.4rem 0 0;padding-left:1.25rem}
+.page__content li{margin:.35rem 0}
+@media(min-width:48em){html{font-size:18px}}
+@media(max-width:700px){.layout{grid-template-columns:minmax(0,1fr);gap:2rem;width:calc(100% - 36px);padding-top:1.25rem}.sidebar{position:static;display:grid;grid-template-columns:100px minmax(0,1fr);column-gap:1rem;align-items:center}.author__avatar{grid-column:1;grid-row:1/3;width:100px;margin:0}.author__content{grid-column:2;grid-row:1;padding:0}.author__name{margin:0}.author__urls{grid-column:2;grid-row:2;display:flex;flex-wrap:wrap;gap:.2rem 1rem;padding:0}.author__urls li{margin:0}.publication-entry:not(.publication-entry--text-only){grid-template-columns:minmax(90px,32%) minmax(0,1fr);gap:.8rem}.publication-entry--text-only{grid-template-columns:minmax(0,1fr)}.page__content h2{margin-top:1.8rem}.experience-entry{gap:0 .5rem}}

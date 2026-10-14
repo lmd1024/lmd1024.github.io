@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect x="2" y="2" width="124" height="124" rx="28" fill="#14211d"/>
+  <text x="64" y="82" text-anchor="middle" fill="#f5f6f1" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700">lmd</text>
+  <circle cx="104" cy="24" r="5" fill="#db8d72"/>
+</svg>
